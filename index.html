@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>pytutorial</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+        #icn {
+            color: rgb(211, 202, 23);
+        }
+
+        .hi-slide{
+            position:relative;
+            width: 754px;
+            height: 292px;
+            border-radius: 50px;
+            margin: 115px auto 0;
+        }
+
+        .hi-slide .hi-next,
+        .hi-slide .hi-prev{
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            border-radius: 50px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            transition: all 1s;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hi-slide .hi-next:hover,
+        .hi-slide .hi-prev:hover{
+            opacity: 1;
+            background-color: white;
+        }
+
+        .hi-slide .hi-prev{
+            content:'<';
+        }
+
+        .hi-slide .hi-prev::before{
+            content: '<';
+        }
+
+        .hi-slide .hi-next{
+            right: -59px;
+        }
+
+        .hi-slide .hi-next::before{
+            content: '>';
+        }
+
+        .hi-slide > ul{
+            list-style: none;
+            position: relative;
+            width: 754px;
+            height: 292px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hi-slide > ul > li{
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+            left: 377px;
+            top:147px ;
+            width: 0;
+            height: 0;
+            padding: 0;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        .hi-slide > ul >li >img{
+            width: 100%;
+            height: 100%;
+            background-position: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container" style="font-family: sans-serif;">
+        <!--PART-1-->
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">
+                            <div>
+                                <img src="logo.png" class="img-fluid" alt="logo">
+                                <img src="pytutorial.png" class="img-fluid" alt="pytutorial">
+                            </div>
+                        </a>
+
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+                            <ul class="navbar-nav my-lg-0 navbar-nav-scroll mr-auto" style="--bs-scroll-height: 100px;">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Online Compiler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">About us</a>
+                                </li>
+                            </ul>
+                            <i class="bi bi-search bi-search-lg "></i>
+                            <div class="btn btn-outline-dark text-center">sign in</div>
+                            <div class="btn btn-danger">Register</div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!--PART-2-->
+        <div class="row" style="margin-top: 180px;">
+            <div class="col-md-6">
+                <h1>
+                    <span style="color: red;">Best</span> platform to learn python For Free
+                </h1>
+                <p>
+                    Discover the basics of programming with our easy-to-follow tutorials and sample code. Follow along
+                    with our guides, experiment with coding exercises, and gain the skills you need to start programming
+                    on your own.
+                </p>
+                <div class="btn btn-outline-dark text-center">sign in</div>
+                <div class="btn btn-danger">Register</div>
+
+
+            </div>
+            <div class="col-md-6">
+                <img src="image2.png" class="img-fluid" height="400px" width="550px" alt="image2">
+            </div>
+        </div>
+
+
+
+
+        <!--PART-3-->
+        <div class="row justify-content-center text-center">
+            <div class="col-8" style="margin-top: 180px;">
+                <h1>Choose a <span style="color: red;">program</span> that transform your career</h1>
+            </div>
+        </div>
+
+
+
+        <!--PART-4   BUTTON-->
+        <div class="row justify-content-center mt-5">
+            <button class="btn btn-secondary btn-lg">Browse all courses -></button>
+        </div>
+
+
+
+
+        <!--PART-5-->
+        <div class="row mt-5">
+            <div class="col-md-4" style="border: 1px solid rgb(138, 132, 132); border-radius: 8px;">
+                <img src="Rectangle 9.png" class="img-fluid rounded mt-2" alt="rectangle9">
+                <h4>python course : beginner level</h4>
+                <p>Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data
+                    Analysis, and more!</p>
+                <div class="icons">
+                    <i class="bi bi-star-fill" id="icn"></i>
+                    <i class="bi bi-star-fill" id="icn"></i>
+                    <i class="bi bi-star-fill" id="icn"></i>
+                    <i class="bi bi-star-fill" id="icn"></i>
+                    <i class="bi bi-star-fill" id="icn"></i>
+                    <span>4.9 (700 reviews)</span>
+                </div>
+
+                <div class="icons mt-3">
+                    <i class="bi bi-alarm"></i>
+                    <span>4 weeks</span>
+                    <i class="bi bi-watch"></i>
+                    <span>2 hrs per week</span>
+                </div>
+
+                <div class="btn btn-danger btn-block mt-3 mb-2">Register</div>
+            </div>
+
+
+
+            <div class=" col-md-4" style="border: 1px solid rgb(138, 132, 132); border-radius: 8px;">
+                    <img src="Rectangle 9.png" class="img-fluid rounded mt-2" alt="rectangle9">
+                    <h4>python course : beginner level</h4>
+                    <p>Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python
+                        Data
+                        Analysis, and more!</p>
+                    <div class="icons">
+                        <i class="bi bi-star-fill" id="icn"></i>
+                        <i class="bi bi-star-fill" id="icn"></i>
+                        <i class="bi bi-star-fill" id="icn"></i>
+                        <i class="bi bi-star-fill" id="icn"></i>
+                        <i class="bi bi-star-fill" id="icn"></i>
+                        <span>4.9 (700 reviews)</span>
+                    </div>
+
+                    <div class="icons mt-3">
+                        <i class="bi bi-alarm"></i>
+                        <span>4 weeks</span>
+                        <i class="bi bi-watch"></i>
+                        <span>2 hrs per week</span>
+                    </div>
+
+                    <div class="btn btn-danger btn-block mt-3 mb-2">Register</div>
+                </div>
+
+
+                <div class="col-md-4" style="border: 1px solid rgb(138, 132, 132); border-radius: 8px;">
+                    <img src="Rectangle 9.png" class="img-fluid rounded mt-2" alt="rectangle9">
+                    <h4>python course : beginner level</h4>
+                    <p>Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python
+                        Data
+                        Analysis, and more!</p>
+                    <div class="icons">
+                        <i class="bi bi-star-fill" id="icn"></i>
+                        <i class="bi bi-star-fill" id="icn"></i>
+                        <i class="bi bi-star-fill" id="icn"></i>
+                        <i class="bi bi-star-fill" id="icn"></i>
+                        <i class="bi bi-star-fill" id="icn"></i>
+                        <span>4.9 (700 reviews)</span>
+                    </div>
+
+                    <div class="icons mt-3">
+                        <i class="bi bi-alarm"></i>
+                        <span>4 weeks</span>
+                        <i class="bi bi-watch"></i>
+                        <span>2 hrs per week</span>
+                    </div>
+
+                    <div class="btn btn-danger btn-block mt-3 mb-2">Register</div>
+                </div>
+            </div>
+
+
+
+            <!--PART-6-->
+            <div class="row justify-content-center text-center" style="margin-top: 180px;">
+                <div class="col-8">
+                    <h1>Start coding in seconds by
+                        using our Compiler</h1>
+                </div>
+
+
+                <div class="col-8 mt-4">
+                    <p>Our immersive learning environment will provide you with a hands-on experience where you can
+                        start
+                        writing real code from your very first lesson.</p>
+                </div>
+            </div>
+
+
+            <!--BUTTON-->
+            <div class="row justify-content-center mt-3">
+                <button class="btn btn-danger btn-lg">Try it Now</button>
+            </div>
+
+
+
+
+            <!--PART-5 IMAGES-->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="indeximg blur1.png" alt="blur1">
+                </div>
+
+                <div class="col-md-4">
+                    <img class="img-fluid" src="indeximg main.png" alt="center img">
+                </div>
+
+                <div class="col-md-4">
+                    <img class="img-fluid" src="indeximg blur1.png" alt="blur2">
+                </div>
+            </div>
+
+
+
+
+            <!--PART-6 -->
+            <div class="row justify-content-between">
+                <div class="col-md-6 pl-4" style="margin-top: 180px;">
+                    <h1>
+                        Not <span style="color: red;">sure</span> where to start?
+                    </h1>
+                    <p>This quick quiz will assist you by asking a few straightforward questions to provide tailored
+                        career
+                        guidance and suggest suitable courses for you.
+                    </p>
+                    <div class="btn btn-danger">Take the quiz</div>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="indeximg 4.png" class="img-fluid" height="400px" width="550px" alt="image2">
+                </div>
+            </div>
+
+
+            <!--PART 7-->
+            <div class="row mt-5 justify-content-between">
+                <div class="col-md-5" style="margin-top: 100px;">
+                    <img class="img-fluid" src="index radio.png" alt="index radio">
+                </div>
+
+                <div class="col-md-5" style="margin-top: 180px;">
+                    <h1>Why <span style="color: red;">pytutorial? </span></h1>
+                    <p>We help individuals and businesses learn Python efficiently to advance their careers and
+                        strategies. We remove obstacles and aim to enhance productivity, improving the tech workforce
+                        and increasing success.</p>
+                    <div class="btn btn-danger">Start Learning</div>
+                </div>
+            </div>
+
+
+
+            <!--PART 8-->
+            <div class="row justify-content-center" style="margin-top: 200px;">
+                <div class="col-md-6 text-center">
+                    <h1>What <span style="color: red;">people</span> are saying</h1>
+                    <p>View and peruse stories from the pytutorial community through videos and written content.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!--PART 8-->
+            <!-- Carousel wrapper -->
+            <div class="row justify-content-center" id="imageslider">
+                <div class="col-md-9" id="imgslider">
+                    <div class="slide hi-slide img-fluid">
+                        <div class="hi-prev img-fluid"></div>
+                        <div class="hi-next img-fluid"></div>
+                        <ul>
+                            <li><img class="img-fluid" src="index t1.png" alt="indext1"></li>
+                            <li><img class="img-fluid" src="index t2 (1).png" alt="t2"></li>
+                            <li><img class="img-fluid" src="index t3.png" alt="t3"></li>
+                            <li><img class="img-fluid" src="index t1.png" alt="indext1"></li>
+                            <li><img class="img-fluid" src="index t2 (1).png" alt="t2"></li>
+                            <li><img class="img-fluid" src="index t3.png" alt="t3"></li>
+                            <li><img class="img-fluid" src="index t1.png" alt="indext1"></li>
+                            <li><img class="img-fluid" src="index t2 (1).png" alt="t2"></li>
+                            <li><img class="img-fluid" src="index t3.png" alt="t3"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!--PART 9-->
+            <div class="row mb-5" style="margin-top: 100px;">
+                <div class="col-md-6" style="margin-top: 130px;">
+                    <h1>Still <span style="color: red;">confused</span> about your career choice? consult with
+                        our
+                        experts</h1>
+                    <div class="btn btn-danger mt-3">contact us</div>
+                </div>
+
+                <div class="col-md-6">
+                    <img class="img-fluid" src="index last.png" alt="index last">
+                </div>
+            </div>
+
+
+
+
+            <!--PART 10-->
+            <div class="container my-5 justify-content-center text-align-center">
+                <!-- Footer -->
+                <footer class="text-center text-lg-start text-white" style="background-color: #0a115b">
+                    <!-- Grid container -->
+                    <div class="container p-4 pb-0">
+                        <!-- Section: Links -->
+                        <section class="">
+                            <!--Grid row-->
+                            <div class="row">
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">support</h6>
+                                    <p>
+                                        <a class="text-white" href="#">Help Center</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="#">Site Map</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="#">Skill Plans</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="#">Contract</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="#">Flow Plans</a>
+                                    </p>
+
+                                </div>
+                                <!-- Grid column -->
+
+                                <hr class="w-100 clearfix d-md-none" />
+
+                                <!-- Grid column -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">Community</h6>
+                                    <p>
+                                        <a class="text-white" href="#">Guides</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="#">teach</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="#">Authors</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="#">Partner with pytutorial</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <hr class="w-100 clearfix d-md-none" />
+
+                                <!-- Grid column -->
+                                <hr class="w-100 clearfix d-md-none" />
+
+                                <!-- Grid column -->
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">Learning</h6>
+                                    <p>
+                                        <a class="text-white" href="#">All Partner Programs</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="#">Solutions Partner Programs</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="#">App Partner Programs</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">Newsletter</h6>
+                                    <p>
+                                        <a class="text-white">Sign up with your email to join our mailing
+                                            list</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                        </section>
+                        <!-- Section: Links -->
+                    </div>
+                    <!-- Grid container -->
+
+                    <!-- Copyright -->
+                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                        © 2023
+                        <a class="text-white" href="#">pytutorial </a> All rights reserved
+                    </div>
+
+            </div>
+            <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+        <!-- End of .container -->
+
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" ></script>
+    <script src="js/jquery.hislide.js"></script>
+    <script>
+        $('.slide').hiSlide();
+
+
+    </script>
+</body>
+
+</html>
